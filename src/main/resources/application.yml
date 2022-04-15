@@ -1,6 +1,10 @@
 server:
   port: 8090
 
+spring:
+  application:
+    name: sesame-job
+
 #日志配置
 logging:
   config: classpath:logback.xml
@@ -21,3 +25,11 @@ xxl:
       port: 9999 #执行器端口，默认即9999
       logpath: ./applogs/xxl-job/jobhandler #执行器日志文件位置
       logretentiondays: 30 #执行器日志保存时间
+
+#Eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8002/eureka
+    register-with-eureka: true #不向eureka注册自己
+    fetch-registry: true
