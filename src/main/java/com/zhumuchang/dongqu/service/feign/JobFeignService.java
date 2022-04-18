@@ -16,4 +16,12 @@ public interface JobFeignService {
     @ResponseBody
     @PostMapping(value = "/shaobing/user/system/refreshToken")
     public String refreshToken(@RequestBody LoginDto param);
+
+    /**
+     * 测试feign调用
+     * @return
+     */
+    @ResponseBody
+    @PostMapping(value = "/shaobing/user/system/test")
+    public LoginDto testFeign();
 }
