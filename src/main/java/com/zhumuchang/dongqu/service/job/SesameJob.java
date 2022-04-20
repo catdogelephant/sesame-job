@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 @Component
 public class SesameJob {
 
-    @Resource
+//    @Resource
     private JobFeignService jobFeignService;
 
     /**
