@@ -25,3 +25,10 @@ xxl:
       port: 9999 #执行器端口，默认即9999
       logpath: ./applogs/xxl-job/jobhandler #执行器日志文件位置
       logretentiondays: 30 #执行器日志保存时间
+
+#feign
+feign:
+  client:
+    config:
+      default:
+        readTimeout: 30000
